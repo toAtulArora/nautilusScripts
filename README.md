@@ -7,3 +7,5 @@ As I said, after going mainstream with linux, I decided to add some useful scrip
   
   
 To use these, you just need to open the folder corresponding to ```/home/atul/.local/share/nautilus/scripts``` and clone this repository there. Simple :D
+
+NB: You'd need ```avconv```, ```zenity``` and ```imagemagick``` preinstalled!
