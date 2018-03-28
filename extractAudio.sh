@@ -5,13 +5,13 @@ if [$# -eq 0]; then
     exit 1
 fi
 #zenity --progress --auto-close --title ="Converting.." --text="Converting to mp3.." --percentage=0
-extension=$(zenity --entry --title="Extension" --text="Input audio container like m4a, mp3, aac ...")
+extension=$(zenity --entry --title="Extension" --text="Input audio container like m4a, mp3, etc")
 for I in `echo $@`;
 #do gnome-terminal -x avconv -i "$I" -acodec mp3 "${I%.*}"."$extension"; #2>&1 | zenity
 
 #do gnome-terminal -x ffmpeg -i "$I" -strict -2 "${I%.*}"."$extension"; #2>&1 | zenity
 do ffmpeg -i "$I" -vn -c:a copy "${I%.*}"."$extension"; #2>&1 | zenity
-   --title="converting" --text="please wait" --progress --pulsate -auto-close;
+   #--title="converting" --text="please wait" --progress --pulsate -auto-close;
 done;
 
 	 

@@ -11,7 +11,7 @@ for I in `echo $@`;
 
 #do gnome-terminal -x ffmpeg -i "$I" -strict -2 "${I%.*}"."$extension"; #2>&1 | zenity
 do ffmpeg -i "$I" -strict -2 "${I%.*}"."$extension"; #2>&1 | zenity
-   --title="converting" --text="please wait" --progress --pulsate -auto-close;
+   #--title="converting" --text="please wait" --progress --pulsate -auto-close;
 done;
 
 	 
