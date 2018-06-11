@@ -11,9 +11,7 @@ touch mylist
 for I in `echo $@`;
 do echo "file '$I'" >> mylist; done
 
-#gnome-terminal -x ffmpeg -f concat -i mylist -c copy combined."$extension" #&& rm mylist
-#terminator -x
-ffmpeg -f concat -i mylist -c copy combined."$extension" #&& rm mylist
+gnome-terminal -x ffmpeg -f concat -i mylist -c copy combined."$extension" #&& rm mylist
 
 #rm mylist
 
