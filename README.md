@@ -5,7 +5,7 @@ As I said, after going mainstream with linux, I decided to add some useful scrip
   3. ```removeSpace.sh``` removes the space from all files in the given directory (regardless of which file you select)
   4. ```refreshThumbnails.sh``` removes the 'failed' directory from the .cache/thumbnails folder
   5. ```normalizeAudio.sh``` normalizes audio files  
-  
+  6. ```lockPDF.sh``` locks the selected PDF files
 To use these, you just need to open the folder corresponding to ```/home/atul/.local/share/nautilus/scripts``` and clone this repository there. Simple :D
 
-NB: You'd need ```ffmpeg```, ```zenity```, ```imagemagick``` and ```ffmpeg-normalize``` (see https://github.com/slhck/ffmpeg-normalize and install from the source) preinstalled!
+NB: You'd need ```ffmpeg```, ```zenity```, ```imagemagick```, ```pdftk``` and ```ffmpeg-normalize``` (see https://github.com/slhck/ffmpeg-normalize and install from the source) installed depending on which scripts you use. 
