@@ -7,16 +7,8 @@ fi
 norm=$(zenity --entry --title="Width" --text="Input target normalization in dB (-1 is recommended)")
 
 #comList=""
-
 for I in `echo $@`;
-	 #do comList=$comList + "ffmpeg-normalize -u -v -m -l $norm $I &&";
-#do gnome-terminal -x ffmpeg-normalize -u -v -m -l $norm $I;
-do ffmpeg-normalize -u -v -m -l $norm $I;   
+
+do ffmpeg-normalize -u -v -m -l $norm "$I" #ffmpeg -i "$I" -strict -2 "${I%.*}"."$extension"; #2>&1 | zenity
+#   --title="converting" --text="please wait" --progress --pulsate -auto-close;
 done;
-
-#zenity --info --title=$comList
-
-#comList=$comList + "echo "Done :D"";
-
-#gnome-terminal -x $comList
-	 
