@@ -14,6 +14,8 @@ zenity --progress --auto-close --title ="Converting.." --text="Converting to PDF
 #touch "$spaceFixed"
 gnome-terminal -x convert "$@" output.pdf
 
+#convert "$@" output.pdf
+
 #$SHELL
 #while [$# -gt 0]; do
 #    cFile=$1
