@@ -7,6 +7,7 @@ As I said, after going mainstream with linux, I decided to add some useful scrip
   5. ```normalizeAudio.sh``` normalizes audio files  
   6. ```lockPDF.sh``` locks the selected PDF files
   
-To use these, you just need to open the folder corresponding to ```/home/atul/.local/share/nautilus/scripts``` and clone this repository there. Simple :D
+<!-- To use these, you just need to open the folder corresponding to ```/home/atul/.local/share/nautilus/scripts``` and clone this repository there. Simple :D -->
+To use these, ```cd ~/.local/share/nautilus/scripts/``` and clone this repository there. Simple :D
 
 NB: You'd need ```ffmpeg```, ```rename```, ```zenity```, ```imagemagick```, ```pdftk``` and ```ffmpeg-normalize``` (see https://github.com/slhck/ffmpeg-normalize and install from the source) installed depending on which scripts you use. 
